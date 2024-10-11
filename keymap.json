@@ -48,7 +48,6 @@
   {
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
-      // put key-bindings here if you want them to work in normal & visual mode
       // Chat with AI
       "space a a": "assistant::ToggleFocus",
       "space a e": "assistant::InlineAssist",
@@ -113,8 +112,6 @@
       "space w c": "pane::CloseAllItems",
       // Switch to recent buffers
       "space ,": "tab_switcher::Toggle", // zed specific
-      // Terminal toogle
-      "ctrl-/": "terminal_panel::ToggleFocus", // zed specific
       // Jump to diagnostic
       "] d": "editor::GoToDiagnostic",
       "[ d": "editor::GoToPrevDiagnostic",
@@ -312,7 +309,6 @@
       "ctrl-w ctrl-q": "pane::CloseAllItems",
       "ctrl-w o": "workspace::CloseInactiveTabsAndPanes",
       "ctrl-w ctrl-o": "workspace::CloseInactiveTabsAndPanes",
-      "ctrl-w n": ["workspace::NewFileInDirection", "Up"],
       "ctrl-w ctrl-n": ["workspace::NewFileInDirection", "Up"],
       "ctrl-w d": "editor::GoToDefinitionSplit",
       "ctrl-w g d": "editor::GoToDefinitionSplit",

@@ -9,7 +9,7 @@
 {
   "assistant": {
     "default_model": {
-      "provider": "zed.dev",
+      "provider": "anthropic",
       "model": "claude-3-5-sonnet-20240620"
     },
     "version": "2"
@@ -31,6 +31,14 @@
   "relative_line_numbers": true,
   "scrollbar": {
     "show": "never"
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
   },
   // Indentation, rainbow indentation
   "indent_guides": {
@@ -54,10 +62,11 @@
         "activate_script": "default"
       }
     },
-    "toolbar": {
-      "title": true
-    },
     "button": false
+  },
+  "toolbar": {
+    "title": false,
+    "quick_actions": false
   },
   // NOTE: Zen mode, refer https://github.com/zed-industries/zed/issues/4382 when it's resolved
   "centered_layout": {
@@ -69,6 +78,21 @@
     "Dockerfile": ["Dockerfile", "Dockerfile.*"],
     "JSON": ["json", "jsonc", "*.code-snippets"]
   },
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/.vscode",
+    "**/.idea",
+    "**/node_modules",
+    "**/.serverless",
+    "**/dist"
+  ],
   // Move all panel to the right
   "project_panel": {
     "button": false,
