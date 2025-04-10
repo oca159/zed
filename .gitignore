@@ -2,3 +2,4 @@ conversations/
 embeddings/
 prompts/
 .tmp*
+tasks.json
