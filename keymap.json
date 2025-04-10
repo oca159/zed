@@ -23,6 +23,13 @@
 			"q": "git_panel::Close"
 		}
 	},
+	{
+		"context": "AgentPanel",
+		"bindings": {
+			"ctrl-\\": "workspace::ToggleRightDock",
+			"cmd-k": "workspace::ToggleRightDock"
+		}
+	},
 	// File panel (netrw)
 	{
 		"context": "ProjectPanel && not_editing",
@@ -80,11 +87,15 @@
 			"space c r ": "editor::Rename",
 			// Chat with AI
 			"space a a": "assistant::ToggleFocus",
+			"ctrl-\\": "workspace::ToggleRightDock",
+			"cmd-k": "workspace::ToggleRightDock",
 			"space a e": "assistant::InlineAssist",
+			"cmd-l": "assistant::InlineAssist",
 			"space a t": "workspace::ToggleRightDock",
 			// Git
 			"space g g": "git_panel::ToggleFocus",
 			"space g h d": "editor::ExpandAllDiffHunks",
+			"space g h D": "git::Diff",
 			"space g h r": "git::Restore",
 			"space g h R": "git::RestoreFile",
 			// Toggle inlay hints
