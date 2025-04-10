@@ -165,6 +165,8 @@
 			// Jump to hunks
 			"] h": "editor::GoToHunk",
 			"[ h": "editor::GoToPreviousHunk",
+			"] c": "editor::GoToHunk",
+			"[ c": "editor::GoToPreviousHunk",
 			// Jump to diagnostic
 			"] d": "editor::GoToDiagnostic",
 			"[ d": "editor::GoToPreviousDiagnostic",
