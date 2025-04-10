@@ -17,6 +17,12 @@
 			"ctrl-j": "workspace::ActivatePaneDown"
 		}
 	},
+	{
+		"context": "GitPanel",
+		"bindings": {
+			"q": "git_panel::Close"
+		}
+	},
 	// File panel (netrw)
 	{
 		"context": "ProjectPanel && not_editing",
@@ -77,8 +83,10 @@
 			"space a e": "assistant::InlineAssist",
 			"space a t": "workspace::ToggleRightDock",
 			// Git
+			"space g g": "git_panel::ToggleFocus",
 			"space g h d": "editor::ExpandAllDiffHunks",
 			"space g h r": "git::Restore",
+			"space g h R": "git::RestoreFile",
 			// Toggle inlay hints
 			"space u i": "editor::ToggleInlayHints",
 			// Toggle soft wrap
@@ -107,7 +115,7 @@
 			"[ b": "pane::ActivatePreviousItem",
 			"space ,": "tab_switcher::Toggle",
 			// Jump to the previous location
-			"space b b": ["workspace::SendKeystrokes", "ctrl-tab enter"],
+			"space b b": "pane::AlternateFile",
 			// Close buffer
 			"space b d": "pane::CloseActiveItem",
 			// Close inactive buffers
